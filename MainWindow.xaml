@@ -1,0 +1,35 @@
+﻿<Window x:Class="LibraryApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LibraryApp"
+        mc:Ignorable="d"
+        Title="Авторизация/Регистрация" Height="300" Width="300">
+    <Grid>
+        <TabControl>
+            <TabItem Header="Вход">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Логин"/>
+                    <TextBox x:Name="LoginTextBox"/>
+                    <TextBlock Text="Пароль"/>
+                    <PasswordBox x:Name="PasswordBox"/>
+                    <Button Content="Войти" Click="Login_Click" Margin="0,10"/>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Регистрация">
+                <StackPanel Margin="10">
+                    <TextBlock Text="Логин"/>
+                    <TextBox x:Name="RegLoginTextBox"/>
+                    <TextBlock Text="Пароль"/>
+                    <PasswordBox x:Name="RegPasswordBox"/>
+                    <TextBlock Text="ФИО"/>
+                    <TextBox x:Name="FioTextBox"/>
+                    <TextBlock Text="Номер телефона"/>
+                    <TextBox x:Name="PhoneTextBox"/>
+                    <Button Content="Зарегистрироваться" Click="Register_Click" Margin="0,10"/>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
